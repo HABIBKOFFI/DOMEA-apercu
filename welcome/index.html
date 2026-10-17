@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; frame-src 'none'; object-src 'none'; worker-src 'none'; base-uri 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Aperçu visuel de l’accueil DOMEA. Connexion et données indisponibles dans cet aperçu.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0D0F12" media="(prefers-color-scheme: dark)">
+  <title>Aperçu de DOMEA</title>
+  <link rel="icon" href="/DOMEA-apercu/assets/domea-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="/DOMEA-apercu/assets/styles.css">
+  <script src="/DOMEA-apercu/assets/preview.js" defer></script>
+</head>
+<body>
+  <header class="preview-banner">
+    <p class="banner-title">Aperçu de DOMEA</p>
+    <p class="banner-description">Connexion et données indisponibles dans cet aperçu.</p>
+  </header>
+  <main class="welcome" aria-label="Accueil DOMEA">
+    <section class="hero" aria-labelledby="brand-title">
+      <h1 id="brand-title" class="brand">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 300" role="img" aria-label="DOMEA">
+          <path d="M166 108 L423 20 L680 108" fill="none" stroke="#1E9E6B" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"></path>
+          <text x="0" y="286" textLength="840" lengthAdjust="spacingAndGlyphs" font-family="Manrope, 'Arial Black', system-ui, sans-serif" font-weight="800" font-size="200" letter-spacing="24" fill="currentColor">DOMEA</text>
+        </svg>
+      </h1>
+      <p class="tagline">L’app des pros de l’état des lieux.</p>
+    </section>
+    <section class="actions" aria-label="Actions de l’aperçu">
+      <button class="button button-primary" type="button" data-preview-open aria-haspopup="dialog" aria-controls="preview-info">Se connecter</button>
+      <button class="button button-outline" type="button" data-preview-open aria-haspopup="dialog" aria-controls="preview-info">Créer un compte</button>
+      <p class="version">v1 · Édité par Halianx</p>
+    </section>
+    <noscript><p class="no-script">Aperçu uniquement : aucun compte ne peut être utilisé ou créé ici.</p></noscript>
+  </main>
+  <dialog id="preview-info" class="preview-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <h2 id="dialog-title">Aperçu de DOMEA</h2>
+    <p id="dialog-description">Connexion et données indisponibles dans cet aperçu.</p>
+    <p>Cette page présente l’écran d’accueil de l’application. Aucun compte ne peut être utilisé ou créé ici.</p>
+    <button class="button button-primary" type="button" id="preview-close" autofocus>Fermer</button>
+  </dialog>
+</body>
+</html>
